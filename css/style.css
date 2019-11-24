@@ -3,19 +3,27 @@ Colors used:
 Primary Color (Black): #5C5959;
 Secondary Color (Red): #E84F4F;
 */
+* {
+  box-sizing: border-box;
+  /*recommended to be in all files*/
+}
 
 body {
   background-color: #ffffff;
   font-family: 'Arimo', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #5C5959;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -30,6 +38,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -41,55 +50,105 @@ img {
 
 a {
   color: #E84F4F;
-  text-decoration: none; /* No underlining */
 }
 
-a:visited { /* visited link */
-  color: #ff7f50;
+a:visited {
+  /* visited link */
+  color: #E84F4F;
 }
 
 a:hover,
 a:focus {
-  color: #E84F4F;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  color: #B43939;
+  text-decoration: none;
+  /* No underlining when hovering over a link -- usually change the color or underline*/
 }
 
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #994c30;
 }
 
-a {/* element selector */
-  color: red;
-}
-
-#my-link {/* id selector */
-  color: green;
-}
-
-.my-link {/* class selector */
-  color: blue;
-}
-
-#button {/* id selector */
-  color: green;
-}
-
-.button {/* class selector */
-  color: blue;
-}
-
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
-  color: #ffffff !important; /* needed to override the default link color */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #E84F4F;
+  color: #ffffff !important;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
+  text-decoration: none;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #E84F4F;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+}
+
+/* Header */
+header {
+  position: fixed;
+  padding: 10px 0px;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(235, 235, 235, 1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(235, 235, 235, 1);
+  box-shadow: 0px 5px 5px 0px rgba(235, 235, 235, 1);
+  text-align: center;
+}
+
+/*Container & Columns*/
+.container {
+  padding: 0px 15px;
+}
+
+.row {
+  margin: 25px 0px;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  width: 100
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #E84F4F;
+}
+
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #E84F4F;
+}
+
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #B43939;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
 }
