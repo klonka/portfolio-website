@@ -97,50 +97,40 @@ header {
   -moz-box-shadow: 0px 5px 5px 0px rgba(235, 235, 235, 1);
   box-shadow: 0px 5px 5px 0px rgba(235, 235, 235, 1);
   text-align: center;
-}
-
-/*Container & Columns*/
-.container {
-  padding: 0px 15px;
-}
-
-.row {
-  margin: 25px 0px;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .logo {
   max-width: 250px;
+  padding: 25px 0px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
-  width: 100
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #E84F4F;
+  text-decoration: none;
 }
 
-nav > ul > li > a:visited {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #E84F4F;
+/*Layout Styling*/
+.container {
+  padding: 0px 15px;
 }
 
-nav > ul > li > a:hover {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #B43939;
+#hero h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67em 0;
 }
 
 #hero {
@@ -149,6 +139,166 @@ nav > ul > li > a:hover {
   width: 100%;
 }
 
+.row {
+  margin: 25px 0px;
+}
+
+footer {
+  text-align: center;
+  padding: 7%;
+}
+
+.social.media {
+  display: inline-block;
+  padding: 40px 5px;
+}
+
+#aboutme h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#aboutme {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
 main {
   padding-top: 133px;
+}
+
+width 100%, max-width 100%, height: auto
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 240px);
+  }
+
+  to {
+    transform: translate(200px, 240px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  #hero span {
+  display: block;
+}
+
+  body {
+    font-size: 16px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+  body {
+    font-size: 28px;
+  }
 }
