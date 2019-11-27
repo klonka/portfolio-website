@@ -132,7 +132,7 @@ nav>ul>li>a {
 
 .navtoggle li .icon {
   position: absolute;
-  padding-right: 0;
+  padding: 0px 5px ;
   right: 0;
   top: 2px;
   font-size: 20px;
