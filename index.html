@@ -7,20 +7,24 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap:300,400,700" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3a5f982306.js" crossorigin="anonymous"></script>
   <title>Klaudia Zielonka - UX/UI Designer</title>
 </head>
 
 <body>
   <header>
     <div class="container">
-      <a href="index.html"><img src="img/about/logo.png" class="logo" alt="Klaudia Zielonka"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="aboutme.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img src="img/about/logo.png" class="logo" alt="Klaudia Zielonka"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -1035,9 +1039,8 @@
     </div>
   </footer>
 
-  <script>
-    alert("Hello");
-  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 

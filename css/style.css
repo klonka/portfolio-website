@@ -96,7 +96,6 @@ header {
   -webkit-box-shadow: 0px 5px 5px 0px rgba(235, 235, 235, 1);
   -moz-box-shadow: 0px 5px 5px 0px rgba(235, 235, 235, 1);
   box-shadow: 0px 5px 5px 0px rgba(235, 235, 235, 1);
-  text-align: center;
   width: 100%;
   background-color: #ffffff;
 }
@@ -111,15 +110,42 @@ nav>ul {
   margin-bottom: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
-
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #fff;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 /*Layout Styling*/
@@ -244,6 +270,22 @@ Medium devices (640px and larger)
 
   main {
     padding-top: 100px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
   }
 
   #hero {
