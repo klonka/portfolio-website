@@ -1,7 +1,7 @@
 /*
 Colors used:
 Primary Color (Black): #5C5959;
-Secondary Color (Red): #E84F4F;
+Secondary Color (Red): #E32C2C;
 */
 * {
   box-sizing: border-box;
@@ -49,12 +49,12 @@ img {
 }
 
 a {
-  color: #E84F4F;
+  color: #E32C2C;
 }
 
 a:visited {
   /* visited link */
-  color: #E84F4F;
+  color: #E32C2C;
 }
 
 a:hover,
@@ -72,14 +72,14 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #E84F4F;
+  background-color: #E32C2C;
   color: #ffffff !important;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   text-decoration: none;
   border-radius: 3px;
-  border-bottom: 2px solid #E84F4F;
+  border-bottom: 2px solid #E32C2C;
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
@@ -198,8 +198,6 @@ main {
   text-align: center;
 }
 
-width 100%, max-width 100%, height: auto
-
 .berlin-illustration {
   width: 100%;
   max-width: 100%;
@@ -211,11 +209,9 @@ width 100%, max-width 100%, height: auto
   0% {
     fill: #edc655;
   }
-
   50% {
     fill: #fcffad;
   }
-
   100% {
     fill: #f76414;
   }
